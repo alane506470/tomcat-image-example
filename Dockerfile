@@ -2,6 +2,7 @@
 
 MAINTAINER alan
 
+RUN sed -i '/jessie-updates/d' /etc/apt/sources.list
 RUN  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50
 RUN apt-get update
  
